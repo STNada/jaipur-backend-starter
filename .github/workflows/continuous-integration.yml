@@ -17,5 +17,5 @@ jobs:
   esLint:
     runs-on: ubuntu-latest
     steps:
-      -name : Analyze Code
-      run: npm run lint
+      - name : Analyze Code
+        run: npm run lint
