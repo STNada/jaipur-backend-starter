@@ -10,7 +10,7 @@ export function initDeck() {
   for (let i = 0; i < 8; i++) deck.push("cloth")
   for (let i = 0; i < 8; i++) deck.push("spice")
   for (let i = 0; i < 10; i++) deck.push("leather")
-  for (let i = 0; i < 11 ; i++) deck.push("camel")
+  for (let i = 0; i < 11; i++) deck.push("camel")
   return shuffle(deck)
 }
 

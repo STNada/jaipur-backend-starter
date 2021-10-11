@@ -7,8 +7,7 @@ jest.mock("fs")
 
 // TODO: Mock lodash shuffle
 jest.mock("lodash")
-lodash.shuffle.mockImplementation((x)=>x)
-
+lodash.shuffle.mockImplementation((x) => x)
 
 describe("Game router", () => {
   test("should create a game", async () => {
@@ -93,6 +92,5 @@ describe("Game router", () => {
     const response = await request(app).post("/games").send({ name: "test" })
     expect(response.statusCode).toBe(201)
     expect(response.body).toStrictEqual(expectedGame)
-
   })
 })
